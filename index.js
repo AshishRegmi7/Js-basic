@@ -3,6 +3,7 @@ console.log("Ashish");
 //ES5
 var person = "Ashish Regmi";
 person = "Ram Regmi";
+console.log(person);
 
 //  var overwrites the variable
 
