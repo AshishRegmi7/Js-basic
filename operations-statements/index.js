@@ -11,7 +11,3 @@ if (num1 > num2) {
 const num3 = 2;
 const num4 = 12;
 console.log(num3 + "is greater than" + num4);
-
-if (num3 < 4 && num4 > 10) {
-  alert("and operator");
-}
