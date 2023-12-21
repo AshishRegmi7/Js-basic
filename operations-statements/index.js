@@ -11,3 +11,9 @@ if (num1 > num2) {
 const num3 = 2;
 const num4 = 12;
 console.log(num3 + "is greater than" + num4);
+
+//Ternary operator
+
+let a = prompt("age");
+const res =
+  a >= "18" ? console.log("USer can vote") : console.log("User cannot vote");
