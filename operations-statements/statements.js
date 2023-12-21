@@ -2,35 +2,35 @@
 // Switch case statements
 
 //calculator
-// const a = prompt("Enter the value of a");
-// const b = prompt("Enter the value of b");
-// const c = prompt("Enter the operator +,-*,/");
-// switch (c) {
-//   //if(c == +)
-//   case "+":
-//     let add = parseFloat(a) + parseFloat(b);
-//     console.log(add);
-//     break;
-//   case "-":
-//     console.log(parsefloat(a) - parsefloat(b));
-//     break;
-//   case "*":
-//     console.log(parsefloat(a) * parsefloat(b));
-//     break;
-//   case "/":
-//     console.log(a / b);
-//     break;
-//   default:
-//     console.log("Invalid operator");
-//     break;
-// }
+const a = prompt("Enter the value of a");
+const b = prompt("Enter the value of b");
+const c = prompt("Enter the operator +,-*,/");
+switch (c) {
+  //if(c == +)
+  case "+":
+    let add = parseFloat(a) + parseFloat(b);
+    console.log(add);
+    break;
+  case "-":
+    console.log(parsefloat(a) - parsefloat(b));
+    break;
+  case "*":
+    console.log(parsefloat(a) * parsefloat(b));
+    break;
+  case "/":
+    console.log(a / b);
+    break;
+  default:
+    console.log("Invalid operator");
+    break;
+}
 
 //switch case week
 
 let day = prompt("Enter the day");
 switch (day) {
   case "Sunday":
-    console.log("We are going to kathamdu in bus");
+    console.log("We are going to kathmandu in bus");
     break;
 
   case "Monday":
