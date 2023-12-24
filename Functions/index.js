@@ -68,3 +68,14 @@
 // let b = Number(prompt("Enter the value of denominator:"));
 
 // console.log(a + "/" + b + "=" + divis(a, b));
+
+//Write a function to find mean of 5 numbers
+let a;
+let b;
+let c;
+let d;
+let e;
+const mean = (a, b, c, d, e) => {
+  return (a + b + c + d + e) / 5;
+};
+console.log(mean(1, 2, 3, 4, 5));
