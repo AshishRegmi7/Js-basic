@@ -1,38 +1,38 @@
-// // // objects in js
+// // objects in js
 
-// // const marks = {
-// //   Ashish: 99,
-// //   Rohan: 90,
-// //   Ramesh: 80,
-// //   Januka: 50,
-// // };
-// // console.log(marks["Januka"]);
+/*const marks = {
+  Ashish: 99,
+  Rohan: 90,
+  Ramesh: 80,
+  Januka: 50,
+};
+console.log(marks["Januka"]);
 
 // //Create a variable of type string and add a number to it
 
-// let a = "Ashish";
-// let b = 6;
-// console.log(a + b);
+let a = "Ashish";
+let b = 6;
+console.log(a + b);
 
 // //Use typeof operator to find the datatype of string in above question.
-// console.log(typeof a);
+console.log(typeof a);
 
-// const student = {
-//   name: "Ashish",
-//   section: "A",
-//   Rollno: 6,
-// };
+const student = {
+  name: "Ashish",
+  section: "A",
+  Rollno: 6,
+};
 
 // //Adding key to object
-// (student["surname"] = "Regmi"),
-//   //Replacing the name
-//   (student["name"] = "Ram");
+(student["surname"] = "Regmi"),
+  //   //Replacing the name
+  (student["name"] = "Ram");
 
-// console.log(student);
+console.log(student);
 
-// console.log(student.Rollno);
+console.log(student.Rollno);
 
-//Write a program to print marks of students in object using for in loop
+// //Write a program to print marks of students in object using for in loop
 
 const obj = {
   Ashish: 98,
@@ -43,3 +43,26 @@ const obj = {
 for (let key in obj) {
   console.log(key + obj[key]);
 }
+
+//Functions practice set
+//Q1 Write a Js function that reverses a number.
+
+const rev = (x) => {
+  x = String(x);
+  return x.split("").reverse("").join("");
+};
+console.log(rev(12345));
+
+//Js function to check whether the passed string is palindrome or not.
+
+const checkpali = (x) => {
+  x = x.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+  const rev = x.split("").reverse().join("");
+  return x === rev;
+};
+const input = prompt("Enter string to check:");
+const result = checkpali(input)
+  ? console.log(input + "is a palindrome")
+  : console.log(input + "isnot a palindrome");
+  */
