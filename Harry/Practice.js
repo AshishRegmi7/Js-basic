@@ -66,3 +66,34 @@ const result = checkpali(input)
   ? console.log(input + "is a palindrome")
   : console.log(input + "isnot a palindrome");
   */
+
+//Write  js function that reverses a number
+
+const reverser = (num) => {
+  const data = String(num);
+  const length = data.length;
+  for (i = length; i >= 0; i--) {
+    console.log(data[i]);
+  }
+};
+console.log(reverser(12345));
+
+//conversion of celcius to fahrenheit
+
+const conversion = (temp, unit = "C") => {
+  if (unit == "C") {
+    return (9 * temp) / 5 + 32 + "fahrenheit";
+  }
+  return ((temp - 32) / 9) * 5 + "celsius";
+};
+console.log(conversion(45, "C"));
+
+//multiplication and division of two numbers
+
+const arithmetic = (a, b, operation = "M") => {
+  if (operation === "M") {
+    return a * b;
+  }
+  return a / b;
+};
+console.log(arithmetic(3, 0, "D"));
