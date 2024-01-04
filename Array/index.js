@@ -1,4 +1,4 @@
-//Create an array
+// //Create an array
 // const array = [
 //   { name: "Ashish", lastName: "Regmi", age: 23 },
 //   { name: "Ram", age: 22 },
@@ -8,8 +8,8 @@
 // ];
 
 // console.log(array);
-// // Access
-// // Provide always starts from 0
+// // // Access
+// // // Provide always starts from 0
 // console.log(array[array.length - 1]);
 
 // // Update
@@ -27,14 +27,21 @@ const arr = [
 
 //Function to console age
 const peoples = (people) => {
-  return people.age;
+  return people.name;
 };
+// let d = arr.sort((a, b) => a.age - b.age);
+// console.log(d);
 
-const sorting = arr.sort((a, b) => a.age - b.age);
-console.log(sorting);
+// let c = arr.map(peoples);
+// console.log(c);
 
-const immutable = arr.map(peoples);
-console.log(immutable);
+const f = arr.map((people) => peoples(people));
+console.log(f);
+// const sorting = arr.sort((a, b) => a.age - b.age);
+// console.log(sorting);
+
+// const immutable = arr.map(peoples);
+// console.log(immutable);
 
 // // foreach
 // arr.forEach(peoples);

@@ -96,4 +96,4 @@ const arithmetic = (a, b, operation = "M") => {
   }
   return a / b;
 };
-console.log(arithmetic(3, 0, "D"));
+console.log(arithmetic(20, 10, "D"));

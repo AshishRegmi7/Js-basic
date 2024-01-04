@@ -90,7 +90,7 @@ d();
 const mult = (a = 3, b) => {
   return a * b;
 };
-console.log(, 2);
+console.log("", 2);
 
 const pagination = (page = 1, size = 5) => {
   for (i = page; i <= size; i++) {

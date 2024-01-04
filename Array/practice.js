@@ -1,33 +1,3 @@
-const items = [
-  { name: "Edward", value: 21 },
-  { name: "Sharpe", value: 37 },
-  { name: "And", value: 45 },
-  { name: "The", value: -12 },
-  { name: "Magnetic", value: 13 },
-  { name: "Zeros", value: 37 },
-];
-
-const [a, ...rest] = items;
-console.log(rest);
-
-// sort by value
-items.sort((a, b) => a.value - b.value);
-
-// sort by name
-items.sort((a, b) => {
-  const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-  const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  // names must be equal
-  return 0;
-});
-
 // //Write a JS function that returns a string that has leetrs in alphabetical order.
 const alpha = (word) => {
   return word.split("").sort().join("");
@@ -40,3 +10,14 @@ console.log(alpha("ashish"));
 // //For eg; mom(true)
 // /*Eg Test
 // 121,-10,10  */
+
+const str = String(prompt("Enter a word or number:"));
+const checkPalindrome = (word) => {
+  return word.split("").reverse().join("");
+};
+let a = checkPalindrome(str);
+if (str === a) {
+  console.log("Entered word or number is palindrome");
+} else {
+  console.log("Not a palindrome");
+}
