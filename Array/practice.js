@@ -1,4 +1,4 @@
-///Write a JS function that returns a string that has leetrs in alphabetical order.
+/*///Write a JS function that returns a string that has leetrs in alphabetical order.
 const alpha = (word) => {
   return word.split("").sort().join("");
 };
@@ -9,9 +9,9 @@ const alpha = (word) => {
 // //Write a js function that return true if the value is palindrome else false?
 // //For eg; mom(true)
 // /*Eg Test
-// 121,-10,10  */
+// 121,-10,10  
 
-/*const str = String(prompt("Enter a word or number:"));
+const str = String(prompt("Enter a word or number:"));
 const checkPalindrome = (word) => {
   return word.split("").reverse().join("");
 };
@@ -22,10 +22,9 @@ if (str === a) {
 {
   console.log(str + " Not a palindrome");
 }
-*/
 
 //Write a function that returns username who has admin access.
-/*const array = [
+const array = [
   { name: "Ashish", roles: ["admin"] },
   { name: "Ram", roles: ["user"] },
   { name: "sita", roles: ["user", "admin"] },
@@ -67,7 +66,6 @@ const i = (inside) => {
 };
 // console.log(i("admin"));
 
-
 const studentMarks = [
   {
     name: "Ashish",
@@ -103,8 +101,8 @@ const f = (roles) => {
   });
   console.log(g);
 };
-console.log(f("management"));*/
-
+console.log(f("management"));
+*/
 // Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
 
 const arr = [
@@ -129,13 +127,15 @@ const capitalizeWords = (str) => {
   const result = capitalizedWords.join(" ");
   return result;
 };
-
-// Example usage with the provided array:
 const capitalizedString = capitalizeWords(arr.join(" "));
 console.log(capitalizedString);
 
-//reduce method
 const redu = [1, 2, 3, 4];
+
+redu.splice(1, 1, "Ashish"); //splice(1(index),1(replace 1 item from indea 1),Ashish(eplace item with "Ashish"))
+console.log(redu);
+
+//reduce method
 const funct = redu.reduce((a, b) => {
   return a + b;
 });
