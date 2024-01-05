@@ -131,7 +131,6 @@ const capitalizedString = capitalizeWords(arr.join(" "));
 console.log(capitalizedString);
 
 const redu = [1, 2, 3, 4];
-
 redu.splice(1, 1, "Ashish"); //splice(1(index),1(replace 1 item from indea 1),Ashish(eplace item with "Ashish"))
 console.log(redu);
 
