@@ -1,5 +1,10 @@
 /* px % em rem */
 
-#first {
-  color: black;
+.upper {
+  display: inline-block;
+}
+.upper ul li {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }

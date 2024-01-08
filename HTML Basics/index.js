@@ -1,5 +1,5 @@
 function today() {
-  return new Date();
+  return new Date().toISOString();
 }
 document.getElementById("first").innerHTML = today();
 

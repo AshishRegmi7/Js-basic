@@ -8,13 +8,21 @@
   </head>
   <body>
     <div id="first">DATE:</div>
-
-    <form onclick="getFormData();return false;">
+    <div class="upper">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Singup</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </div>
+    <form>
       <label>First Name</label>
       <input type="text" id="fName" />
       <label>Last Name</label>
-      <input type="text" id="lName" />
-      <button>Submit</button>
+      <input type="password" id="lName" />
+      <button onclick="getFormData();return false;">Submit</button>
       <script src="index.js"></script>
     </form>
   </body>
