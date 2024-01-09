@@ -11,13 +11,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <script src="index.js"></script>
       <h1 class="text-center">E-Sarkar</h1>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -90,7 +86,7 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">New plans for 2024</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                   </div>
@@ -116,32 +112,39 @@
           </div>
         </div>
       </div>
-    <div class="row">
-      <div class="col border border-1">
-      <div class="container">User sign up
+      <div class="container text-center">Fill the form
+    <form>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="What is your name?" aria-label="">
+          <label>First Name:</label>
+          <input type="text" class="form-control" id="fname" placeholder="What is your name?" aria-label="First name">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          <label>Last Name:</label>
+          <input type="text" class="form-control" id="lname" placeholder="Last name" aria-label="Last name">
         </div>
-      </div>
       </div>
       <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Select College Name" >
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="inputEmail4">
       </div>
       
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Kadaghari,Kathmandu">
+      </div>
+      <br>
+      </div>
+        <button type="submit" class="btn btn-primary" onclick="getFormData();return false;" >Submit</button>
+      </div>
+      </div>
+      </div>
+    </form>
 
-</div>
   </body>
-</html>
