@@ -1,4 +1,4 @@
-/*///Write a JS function that returns a string that has leetrs in alphabetical order.
+///Write a JS function that returns a string that has leetrs in alphabetical order.
 const alpha = (word) => {
   return word.split("").sort().join("");
 };
@@ -131,7 +131,7 @@ const capitalizedString = capitalizeWords(arr.join(" "));
 console.log(capitalizedString);
 
 const redu = [1, 2, 3, 4];
-redu.splice(1, 1, "Ashish"); //splice(1(index),1(replace 1 item from indea 1),Ashish(eplace item with "Ashish"))
+redu.splice(1, 1, "Ashish"); //splice(1(index),1(replace 1 item from index 1),Ashish(replace item with "Ashish"))
 console.log(redu);
 
 //reduce method

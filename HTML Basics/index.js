@@ -4,7 +4,7 @@ function getFormData() {
   const email = document.getElementById("inputEmail4").value;
   const password = document.getElementById("inputPassword4").value;
   const address = document.getElementById("inputAddress").value;
-  const gender = document.getElementById("gender").checked;
+  const gender = document.getElementByName("gender").value;
   console.log(
     "First Name:" + fName,
     "Last Name:" + lName,
